@@ -397,6 +397,9 @@ img {
     form {
         width: 90%;
     }
+    .logo img {
+        height: 35px; /* Smaller logo on mobile */
+    }
 }
 
 /* Enhancements for Laptop Screens */
@@ -412,5 +415,21 @@ img {
     .service-item, .career-item, .update-item {
         padding: 25px;
     }
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    padding: 5px;
+    text-decoration: none;
 }
 
