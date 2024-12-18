@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fieldbyte Pvt Ltd</title>
+    <title>Technology Pvt Ltd</title>
     <link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/x-icon" href="logo_cyan_favicon.ico">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo_white.png" alt="Logo" style="height: 50px;">
-        </div>
         <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+			<div class="logo">
+				<img src="logo_white.png" alt="FieldByte Logo" />
+			</div>
+			<div class="menu-icon" onclick="toggleMenu()">
+				&#9776; <!-- Hamburger icon -->
+			</div>
+			<ul class="nav-links" id="navLinks" onclick="closeMenu()">
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
     </header>
 
     <section class="hero">
@@ -58,7 +61,7 @@
 
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>At Fieldbyte Pvt Ltd, we are committed to delivering innovative engineering solutions to empower your business. Our expertise spans across 3D modeling, prototyping, and cutting-edge IoT devices. Partner with us for high-quality results and industry-leading technology.</p>
+        <p>At Technology Pvt Ltd, we are committed to delivering innovative engineering solutions to empower your business. Our expertise spans across 3D modeling, prototyping, and cutting-edge IoT devices. Partner with us for high-quality results and industry-leading technology.</p>
         <img src="images/team.jpg" alt="Our Team">
     </section>
 	<section id="careers" class="careers">
@@ -96,7 +99,7 @@
 			</div>
 			<div class="update-item">
 				<h3>ISO Certification Achieved</h3>
-				<p>Fieldbyte Pvt Ltd is now ISO certified, ensuring the highest quality standards.</p>
+				<p>Technology Pvt Ltd is now ISO certified, ensuring the highest quality standards.</p>
 			</div>
 		</div>
 	</section>
@@ -119,7 +122,18 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Fieldbyte Pvt Ltd. All rights reserved.</p>
+        <p>&copy; 2024 Technology Pvt Ltd. All rights reserved.</p>
     </footer>
+	<script>
+		function toggleMenu() {
+			const navLinks = document.getElementById("navLinks");
+			navLinks.classList.toggle("active");
+		}
+
+		function closeMenu() {
+			const navLinks = document.getElementById("navLinks");
+			navLinks.classList.remove("active");
+		}
+	</script>
 </body>
 </html>
